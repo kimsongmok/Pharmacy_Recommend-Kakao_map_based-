@@ -8,7 +8,6 @@ spring:
         - common
 
 ---
-
 spring:
   config:
     activate:
