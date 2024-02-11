@@ -18,6 +18,7 @@ configurations {
     }
 }
 
+
 bootJar{
     archiveFileName = 'app.jar'
 }
@@ -36,11 +37,19 @@ dependencies {
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
 
     // spock
-    testImplementation 'org.spockframework:spock-core:2.1-groovy-3.0'
+    testImplementation 'org.spockframework:spock-core:2.3-groovy-3.0'
     testImplementation 'org.spockframework:spock-spring:2.1-groovy-3.0'
+    testImplementation 'org.codehaus.groovy:groovy:3.0.20'
+    testImplementation('org.junit.jupiter:junit-jupiter-api')
+    testImplementation('org.junit.jupiter:junit-jupiter-engine:')
+    testImplementation('org.junit.jupiter:junit-jupiter')
+    testImplementation 'org.junit.platform:junit-platform-launcher'
+    testImplementation 'org.junit.vintage:junit-vintage-engine'
+
 
     // 런타임에 클래스 기반 spock mock을 만들기 위해서 필요
     testImplementation 'net.bytebuddy:byte-buddy:1.12.10'
+
 }
 
 tasks.named('test') {
