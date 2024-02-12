@@ -1,4 +1,4 @@
-package api.service
+package project.api.service
 
 import map.pharmacy_recommendation.api.service.KakaoUriBuilderService
 import org.springframework.boot.test.context.SpringBootTest

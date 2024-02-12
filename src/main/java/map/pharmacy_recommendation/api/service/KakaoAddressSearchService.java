@@ -22,18 +22,19 @@ public class KakaoAddressSearchService {
   private final RestTemplate restTemplate;
   private final KakaoUriBuilderService kakaoUriBuilderService;
 
-  @Value("${kakao.api.key}")
+  @Value("${kakao.rest.api.key}")
   private String kakaoRestApiKey;
 
   public KakaoApiResponseDto requestAddressSearch(String address) {
 
     if (ObjectUtils.isEmpty(address)) return null;
+
     URI uri = kakaoUriBuilderService.buildUriByAddressSearch(address);
 
     HttpHeaders headers = new HttpHeaders();
     headers.set(HttpHeaders.AUTHORIZATION,"KakaoAK " + kakaoRestApiKey);
 
-    HttpEntity httpEntity = new HttpEntity<>(headers);
+    HttpEntity<Object> httpEntity = new HttpEntity<>(headers);
 
     //kakao api 호출
     return restTemplate.exchange(uri, HttpMethod.GET, httpEntity, KakaoApiResponseDto.class).getBody();
