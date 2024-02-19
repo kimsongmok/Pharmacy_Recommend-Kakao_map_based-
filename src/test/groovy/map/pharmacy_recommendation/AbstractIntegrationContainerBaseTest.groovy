@@ -1,10 +1,10 @@
-package project
+package map.project
 
 import org.springframework.boot.test.context.SpringBootTest
-import spock.lang.Specification
 import org.testcontainers.containers.GenericContainer
+import spock.lang.Specification
 
-@SpringBootTest
+@SpringBootTest(classes = [AbstractIntegrationContainerBaseTest])
 class AbstractIntegrationContainerBaseTest extends Specification {
     static final GenericContainer MY_REDIS_CONTAINER
 

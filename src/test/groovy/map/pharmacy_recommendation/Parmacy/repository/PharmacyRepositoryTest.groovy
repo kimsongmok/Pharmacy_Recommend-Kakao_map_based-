@@ -1,10 +1,9 @@
-package project.pharmacy.repository
+package map.pharmacy_recommendation.pharmacy.repository
 
 import map.pharmacy_recommendation.Pharmacy.entity.Pharmacy
 import map.pharmacy_recommendation.Pharmacy.repository.PharmacyRepository
 import org.springframework.beans.factory.annotation.Autowired
-import org.springframework.boot.test.context.SpringBootTest
-import project.AbstractIntegrationContainerBaseTest
+import map.pharmacy_recommendation.AbstractIntegrationContainerBaseTest
 
 class PharmacyRepositoryTest extends AbstractIntegrationContainerBaseTest {
 
