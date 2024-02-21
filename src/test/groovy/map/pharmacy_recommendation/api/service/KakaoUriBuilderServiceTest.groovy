@@ -3,7 +3,6 @@ package map.project.api.service
 import map.pharmacy_recommendation.api.service.KakaoUriBuilderService
 import org.springframework.boot.test.context.SpringBootTest
 import spock.lang.Specification
-
 import java.nio.charset.Charset
 import java.nio.charset.StandardCharsets
 
