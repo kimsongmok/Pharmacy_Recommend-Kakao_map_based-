@@ -1,1 +1,1 @@
-<h1>카카오맵 기반 약국 추천 서비스</h1>
+<h1>kakaomap based Pharmacy recommend system</h1>
