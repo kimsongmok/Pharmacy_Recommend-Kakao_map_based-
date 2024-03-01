@@ -1,1 +1,1 @@
-<h1>kakaomap based Pharmacy recommend system</h1>
+<h1>kakao-map based Pharmacy recommend system</h1>
